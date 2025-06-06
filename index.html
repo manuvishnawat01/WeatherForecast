@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <p>Get real-time weather updates for any location</p>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <input type="text" id="location-input" placeholder="Enter city, town, or coordinates...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="location-btn" title="Use my location"><i class="fas fa-location-arrow"></i></button>
+                <div class="unit-toggle">
+                    <button id="celsius-btn" class="active">°C</button>
+                    <button id="fahrenheit-btn">°F</button>
+                </div>
+            </div>
+
+            <div class="weather-display">
+                <div class="current-weather">
+                    <div class="weather-info">
+                        <h2 id="location-name">Search for a location</h2>
+                        <div class="weather-main">
+                            <div id="weather-icon"><i class="fas fa-sun"></i></div>
+                            <div id="temperature">--°</div>
+                        </div>
+                        <div id="weather-description">Weather description</div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <i class="fas fa-tint"></i>
+                            <span id="humidity">--%</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-wind"></i>
+                            <span id="wind-speed">-- km/h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-container">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast" id="forecast">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="about-section">
+            <h2>About This Project</h2>
+            <p>This weather application provides real-time weather information for any location worldwide. It uses data from the OpenWeatherMap API to display current weather conditions and a 5-day forecast. Features include location search, geolocation detection, and temperature unit conversion.</p>
+        </section>
+
+        <footer>
+            <p>Created by Manu Pratap Singh</p>
+            <p>Project 4: Weather App</p>
+            <p>Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
